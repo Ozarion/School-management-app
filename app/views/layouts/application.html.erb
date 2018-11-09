@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SchoolManagementApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag  'https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity: 'sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'%>
+  </head>
+
+  <body>
+    <%= render 'layouts/header'%>
+     <aside class="main-sidebar">
+      <section class="sidebar">
+        <div class="user-status">
+          <img src="https://www.famousbirthdays.com/faces/kosarin-kira-image.jpg" ALIGN="left" class="profile-pic large-pic">
+          <p class="profile-name">Admin</p>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="header">MAIN NAVIGATION</li>
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Layout</a>
+          </li>
+          <li class="header">GENERAL LINKS</li>
+          <li class="treeview">
+             <%= link_to 'Add new Teacher', teacher_new_path %>
+          </li>
+          <li class="treeview">
+            <a href="#">Charts</a>
+          </li>
+          <li class="treeview">
+            <a href="#">Custom Pages</a>
+          </li>
+          <li class="treeview">
+            <a href="#">Forms</a>
+          </li>
+          <li class="treeview">
+            <a href="#">Tables</a>
+          </li>
+          <li class="treeview">
+            <a href="#">Calendar</a>
+          </li>
+          <li class="treeview">
+            <a href="#">Email & Chat</a>
+          </li>
+          <li class="treeview">
+            <a href="#">Multilevel Menu</a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+    <%= yield %>
+  </body>
+</html>

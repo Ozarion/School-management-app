@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    max-height: 130px;
+    z-index: 1030;
+    margin-top: -8px;
+    margin-right: -8px;
+}
+
+header .logo {
+    color: #333;
+    border-bottom: 0 solid transparent;
+}
+
+header .logo {
+    transition: width .3s ease-in-out;
+    display: block;
+    float: left;
+    height: 66px;
+    font-size: 14px;
+    line-height: 65px;
+    text-align: center;
+    width: 280px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 0 15px;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-left: -9px;
+}
+
+header .logo:hover {
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+} 
+
+.navbar {
+    position: relative;
+    background-color: #fff;
+    transition: margin-left .3s ease-in-out;
+    margin-bottom: 0;
+    margin-left: 271px;
+    border: 1px solid transparent;
+    min-height: 65px;
+    border-radius: 0;
+}
+
+.navbar-static-top {
+    z-index: 1000;
+}
+
+.sidebar-toggle {
+    color: #000;
+    float: left;
+    background-color: transparent;
+    padding: 23px 30px;
+    font-family: 'fontAwesome';
+}
+
+.sidebar-toggle:hover {
+    background-color: #f7f7f7;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+.border {
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+}
+
+.navbar-option-menu {
+    float: right;
+}
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.navbar-nav > li {
+    float: left;
+}
+
+.border-left {
+    border-left: 2px solid #e6e6e6;
+}
+
+.nav > li, .nav > li > a {
+    position: relative;
+    display: block;
+}
+
+.messages-menu a {
+    padding: 23px 30px;
+    color: #333;
+}
+
+.profile-pic {
+    width: 30px;
+    border-radius: 100%;
+    margin: 0;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.navbar-nav li a:hover {
+    background-color: #f7f7f7;
+}
+
+.logo {
+    background-color: #fafafa;
+}
+

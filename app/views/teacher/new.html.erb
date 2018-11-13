@@ -1,0 +1,29 @@
+<div class="form">
+<h1>Add New Teacher</h1>
+
+<%= form_for @teacher, url: {action: "create"} do |f| %>
+    <%= render 'shared/error_messages' %>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control'  %>
+
+      <%= f.label :address %>
+      <%= f.text_field :address, class: 'form-control'  %>
+
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number, class: 'form-control'  %>
+
+      <%= f.label :birthday %>
+      <%= f.date_field :birthday, class: 'form-control'  %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control'  %>
+
+      <%= f.label :password_confirmation, "Password Confirmation" %>
+      <%= f.password_field :password_confirmation, class: 'form-control'  %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+<% end %>
+</div>

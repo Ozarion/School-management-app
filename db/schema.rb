@@ -11,10 +11,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2018_11_06_194526) do
 =======
 ActiveRecord::Schema.define(version: 2018_11_13_130016) do
 >>>>>>> added students
+=======
+ActiveRecord::Schema.define(version: 2018_11_06_194526) do
+>>>>>>> 3374af74447ef3fc2f05e5aedc60eb0ffe9fa849
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"

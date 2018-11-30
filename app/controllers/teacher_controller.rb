@@ -3,7 +3,11 @@ class TeacherController < ApplicationController
   def show
     @teacher = Teacher.find(params[:id])
   end
-  
+
+  def index
+    @teachers = Teacher.all
+  end
+
   def new
     @teacher = Teacher.new
   end

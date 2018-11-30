@@ -194,3 +194,14 @@ input[type="text"] {
     }
   }
 
+  .index {
+      margin-left: 20%;
+      p a {
+          color: black;
+          font-family: Helvetica, Arial, sans-serif;
+      }
+      p a:hover {
+          color: #1e4ccc;
+      }
+  }
+

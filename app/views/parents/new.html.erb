@@ -1,7 +1,7 @@
 <div class="form">
-<h1>Add New Student</h1>
+<h1>Add New Parent</h1>
 
-<%= form_for @student, url: {action: "create"} do |f| %>
+<%= form_for @parent, url: {action: "create"} do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control' %>
 
@@ -13,9 +13,6 @@
 
       <%= f.label :phone_number %>
       <%= f.text_field :phone_number, class: 'form-control'  %>
-
-      <%= f.label :birthday %>
-      <%= f.date_field :birthday, class: 'form-control' %>
 
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control'  %>

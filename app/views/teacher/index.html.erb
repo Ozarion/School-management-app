@@ -1,0 +1,7 @@
+<div class="index">
+<h1>List of all Teachers:</h1>
+<% @teachers.each do |teacher| %>
+ <p><%= link_to teacher.name, teacher %></p>
+ <br>
+<% end %>
+</div>

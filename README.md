@@ -1,5 +1,5 @@
 # README
-This is a open-source sshool management application created by Ozarion Software Solutions.
+This is a open-source school management application in which teachers can store all information and attendences of students.
 
 # License
 

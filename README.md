@@ -1,5 +1,5 @@
 # README
-This is a open-source school management application in which teachers can store all information and attendences of students.
+This is a open-source school management application in which you can store all information and attendences of students and  teachers.
 
 # License
 
